@@ -1,14 +1,15 @@
 sum_before_last_neg = 0
-n_before_last_neg = 0
+count_before_last_neg = 0
 cur_sum = 0
-cur_n = 0
+cur_count = 0
 while (n := int(input())) != 0:
     if n > 0:
         cur_sum += n
-        cur_n += 1
+        cur_count += 1
     else:
         sum_before_last_neg += cur_sum
-        n_before_last_neg += cur_n
-        cur_sum, cur_n = 0, 0
+        count_before_last_neg += cur_count
+        cur_sum, cur_count = 0, 0
 
-print(sum_before_last_neg / n_before_last_neg if sum_before_last_neg != 0 else 'Вы обещали отрицательное!')
+print(sum_before_last_neg / count_before_last_neg if
+      sum_before_last_neg != 0 else 'Вы обещали отрицательное!')
