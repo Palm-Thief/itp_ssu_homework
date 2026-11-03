@@ -5,7 +5,7 @@ pow3 = 3
 powx = x
 
 res = 1
-for i in range(1, n + 1):
+for i in range(1, int(n) + 1):
     if i > 1:
         pow5 *= 25
         pow3 *= 9
