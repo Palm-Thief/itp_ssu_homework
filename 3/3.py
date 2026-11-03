@@ -1,6 +1,6 @@
 n, x = list(map(float, input().split()))
 
-pow5 = 1
+pow5 = 25
 pow3 = 3
 powx = x
 
@@ -10,7 +10,7 @@ for i in range(1, int(n) + 1):
         pow5 *= 25
         pow3 *= 9
         powx *= x
-    numerator = (pow5 - pow3) * x
+    numerator = (pow5 - pow3) * powx
     denominator = (2*i) ** 0.5
     res *= numerator / denominator
 
